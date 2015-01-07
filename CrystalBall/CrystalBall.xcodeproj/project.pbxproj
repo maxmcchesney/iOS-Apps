@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D80E2ECB1A52599800CFD264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E2ECA1A52599800CFD264 /* main.m */; };
+		D80E2ECE1A52599800CFD264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E2ECD1A52599800CFD264 /* AppDelegate.m */; };
+		D80E2ED11A52599800CFD264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E2ED01A52599800CFD264 /* ViewController.m */; };
+		D80E2ED41A52599800CFD264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80E2ED21A52599800CFD264 /* Main.storyboard */; };
+		D80E2ED61A52599800CFD264 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80E2ED51A52599800CFD264 /* Images.xcassets */; };
+		D80E2ED91A52599800CFD264 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E2ED71A52599800CFD264 /* LaunchScreen.xib */; };
+		D80E2EE51A52599800CFD264 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E2EE41A52599800CFD264 /* CrystalBallTests.m */; };
+		D80E2EF01A5324F500CFD264 /* CrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E2EEF1A5324F500CFD264 /* CrystalBall.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D80E2EDF1A52599800CFD264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D80E2EBD1A52599800CFD264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D80E2EC41A52599800CFD264;
+			remoteInfo = CrystalBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D80E2EC51A52599800CFD264 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80E2EC91A52599800CFD264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80E2ECA1A52599800CFD264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D80E2ECC1A52599800CFD264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D80E2ECD1A52599800CFD264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D80E2ECF1A52599800CFD264 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D80E2ED01A52599800CFD264 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D80E2ED31A52599800CFD264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D80E2ED51A52599800CFD264 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D80E2ED81A52599800CFD264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D80E2EDE1A52599800CFD264 /* CrystalBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80E2EE31A52599800CFD264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80E2EE41A52599800CFD264 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		D80E2EEE1A5324F500CFD264 /* CrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrystalBall.h; sourceTree = "<group>"; };
+		D80E2EEF1A5324F500CFD264 /* CrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrystalBall.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D80E2EC21A52599800CFD264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80E2EDB1A52599800CFD264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D80E2EBC1A52599800CFD264 = {
+			isa = PBXGroup;
+			children = (
+				D80E2EC71A52599800CFD264 /* CrystalBall */,
+				D80E2EE11A52599800CFD264 /* CrystalBallTests */,
+				D80E2EC61A52599800CFD264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D80E2EC61A52599800CFD264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D80E2EC51A52599800CFD264 /* CrystalBall.app */,
+				D80E2EDE1A52599800CFD264 /* CrystalBallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D80E2EC71A52599800CFD264 /* CrystalBall */ = {
+			isa = PBXGroup;
+			children = (
+				D80E2ECF1A52599800CFD264 /* ViewController.h */,
+				D80E2ED01A52599800CFD264 /* ViewController.m */,
+				D80E2ED21A52599800CFD264 /* Main.storyboard */,
+				D80E2ED51A52599800CFD264 /* Images.xcassets */,
+				D80E2ED71A52599800CFD264 /* LaunchScreen.xib */,
+				D80E2EC81A52599800CFD264 /* Supporting Files */,
+				D80E2EEE1A5324F500CFD264 /* CrystalBall.h */,
+				D80E2EEF1A5324F500CFD264 /* CrystalBall.m */,
+			);
+			path = CrystalBall;
+			sourceTree = "<group>";
+		};
+		D80E2EC81A52599800CFD264 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D80E2ECC1A52599800CFD264 /* AppDelegate.h */,
+				D80E2ECD1A52599800CFD264 /* AppDelegate.m */,
+				D80E2EC91A52599800CFD264 /* Info.plist */,
+				D80E2ECA1A52599800CFD264 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D80E2EE11A52599800CFD264 /* CrystalBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				D80E2EE41A52599800CFD264 /* CrystalBallTests.m */,
+				D80E2EE21A52599800CFD264 /* Supporting Files */,
+			);
+			path = CrystalBallTests;
+			sourceTree = "<group>";
+		};
+		D80E2EE21A52599800CFD264 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D80E2EE31A52599800CFD264 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D80E2EC41A52599800CFD264 /* CrystalBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80E2EE81A52599800CFD264 /* Build configuration list for PBXNativeTarget "CrystalBall" */;
+			buildPhases = (
+				D80E2EC11A52599800CFD264 /* Sources */,
+				D80E2EC21A52599800CFD264 /* Frameworks */,
+				D80E2EC31A52599800CFD264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrystalBall;
+			productName = CrystalBall;
+			productReference = D80E2EC51A52599800CFD264 /* CrystalBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D80E2EDD1A52599800CFD264 /* CrystalBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D80E2EEB1A52599800CFD264 /* Build configuration list for PBXNativeTarget "CrystalBallTests" */;
+			buildPhases = (
+				D80E2EDA1A52599800CFD264 /* Sources */,
+				D80E2EDB1A52599800CFD264 /* Frameworks */,
+				D80E2EDC1A52599800CFD264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D80E2EE01A52599800CFD264 /* PBXTargetDependency */,
+			);
+			name = CrystalBallTests;
+			productName = CrystalBallTests;
+			productReference = D80E2EDE1A52599800CFD264 /* CrystalBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D80E2EBD1A52599800CFD264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = DigitalCrafts;
+				TargetAttributes = {
+					D80E2EC41A52599800CFD264 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D80E2EDD1A52599800CFD264 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D80E2EC41A52599800CFD264;
+					};
+				};
+			};
+			buildConfigurationList = D80E2EC01A52599800CFD264 /* Build configuration list for PBXProject "CrystalBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D80E2EBC1A52599800CFD264;
+			productRefGroup = D80E2EC61A52599800CFD264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D80E2EC41A52599800CFD264 /* CrystalBall */,
+				D80E2EDD1A52599800CFD264 /* CrystalBallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D80E2EC31A52599800CFD264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80E2ED41A52599800CFD264 /* Main.storyboard in Resources */,
+				D80E2ED91A52599800CFD264 /* LaunchScreen.xib in Resources */,
+				D80E2ED61A52599800CFD264 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80E2EDC1A52599800CFD264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D80E2EC11A52599800CFD264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80E2ED11A52599800CFD264 /* ViewController.m in Sources */,
+				D80E2EF01A5324F500CFD264 /* CrystalBall.m in Sources */,
+				D80E2ECE1A52599800CFD264 /* AppDelegate.m in Sources */,
+				D80E2ECB1A52599800CFD264 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80E2EDA1A52599800CFD264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80E2EE51A52599800CFD264 /* CrystalBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D80E2EE01A52599800CFD264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D80E2EC41A52599800CFD264 /* CrystalBall */;
+			targetProxy = D80E2EDF1A52599800CFD264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D80E2ED21A52599800CFD264 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80E2ED31A52599800CFD264 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D80E2ED71A52599800CFD264 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80E2ED81A52599800CFD264 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D80E2EE61A52599800CFD264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D80E2EE71A52599800CFD264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D80E2EE91A52599800CFD264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrystalBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D80E2EEA1A52599800CFD264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrystalBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D80E2EEC1A52599800CFD264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrystalBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrystalBall.app/CrystalBall";
+			};
+			name = Debug;
+		};
+		D80E2EED1A52599800CFD264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrystalBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrystalBall.app/CrystalBall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D80E2EC01A52599800CFD264 /* Build configuration list for PBXProject "CrystalBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80E2EE61A52599800CFD264 /* Debug */,
+				D80E2EE71A52599800CFD264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D80E2EE81A52599800CFD264 /* Build configuration list for PBXNativeTarget "CrystalBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80E2EE91A52599800CFD264 /* Debug */,
+				D80E2EEA1A52599800CFD264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D80E2EEB1A52599800CFD264 /* Build configuration list for PBXNativeTarget "CrystalBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80E2EEC1A52599800CFD264 /* Debug */,
+				D80E2EED1A52599800CFD264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D80E2EBD1A52599800CFD264 /* Project object */;
+}
