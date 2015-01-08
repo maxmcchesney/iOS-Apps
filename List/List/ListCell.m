@@ -23,11 +23,50 @@
     
 }
 
-//-(BOOL)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    
-//    return 1;
-//}
+//  William's code for touch recognition to toggle strikeThrough and colorView
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint touchLocation = [touch locationInView:self];
+    
+    if ([[touch.view class] isSubclassOfClass:[UIView class]]) {
+        
+        if (CGRectContainsPoint(colorView.frame, touchLocation)) {
+            
+            if (colorView.backgroundColor  == [UIColor clearColor]) {
+                colorView.backgroundColor = _itemInfo[@"color"];
+            }
+            
+            else {
+                colorView.backgroundColor = [UIColor clearColor];
+                
+                // Try to add white border here
+                
+                colorView.layer.borderColor = (__bridge CGColorRef)([UIColor whiteColor]);
+                colorView.layer.borderWidth = 1;
+            }
+        }
+        
+        else {
+            
+            if (isDone == false) {
+                strikeThrough.hidden = true;
+                isDone = true;
+            }
+            
+            else {
+                strikeThrough.hidden = false;
+                isDone = false;
+            }
+            
+            
+        }
+    }
+    
+    
+}
+
+
+
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     

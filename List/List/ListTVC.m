@@ -9,7 +9,7 @@
 #import "ListTVC.h"
 #import "ListCell.h"
 
-//  Finish coloring & laying out the TableViewCell based on design
+//  DONE - Finish coloring & laying out the TableViewCell based on design
 
 //  DONE - Change row height
 
@@ -22,8 +22,8 @@
 //  DONE - Add 10 items to array
 
 //Extra:
-//  Add swipe to delete
-//  Make the array mutable
+//  DONE - Add swipe to delete
+//  DONE - Make the array mutable
 
 
 @interface ListTVC ()
@@ -33,7 +33,8 @@
 @implementation ListTVC
 
 {
-    NSArray * listItems;
+    NSArray * listItems2;
+    NSMutableArray * listItems;
 }
 //  ^ Local instance variables should go in brackets like above. Purpose is so the instance variables will be available throughout the life cycle of the object it's in.
 
@@ -59,7 +60,7 @@
 //                      @"item2"
 //                      ];
 
-        listItems = @[
+        listItems2 = @[
                       
                       @{
                           @"text":@"Milk",
@@ -126,10 +127,9 @@
                           @"color":[UIColor blackColor],
                           @"done":@YES
                           }
-
-                      
                       ];
         
+        listItems = [listItems2 mutableCopy];
         
 //      listItems.count   returns the number of items in array
 //      [listItems objectAtIndex:0]   returns the item at that point in the array
@@ -141,12 +141,34 @@
 }
 //  ^ instancetype is just like id, it's a wild card. This is for overriding init. You would do this for 2 reasons:
 
+
+//  Method to change the row height
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 75;
 }
 
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
 
+-(void)viewDidLayoutSubviews
+{
+    if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tableView setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([self.tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.tableView setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
 
 
 - (void)viewDidLoad {
@@ -162,7 +184,33 @@
 //    [self.tableView addGestureRecognizer:tap];
     
     
+    
+    
+    
+    //The setup code (in viewDidLoad in your view controller)
+//    UITapGestureRecognizer *singleFingerTap =
+//    [[UITapGestureRecognizer alloc] initWithTarget:self
+//                                            action:@selector(handleSingleTap:)];
+//    [self.view addGestureRecognizer:singleFingerTap];
+//    [singleFingerTap release];
+    
+
 }
+
+////The event handling method
+//- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+//    CGPoint location = [recognizer locationInView:[recognizer.view superview]];
+//    
+//    //Do stuff here...
+//
+//    
+//}
+
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -205,8 +253,13 @@
     return cell;
 }
 
-
-
+//// Attempt to listen for touches and change the stikethrough
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//
+//
+//    
+//}
 
 /*
 // Override to support conditional editing of the table view.
@@ -216,17 +269,21 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        // Delete the data and row
+        [listItems removeObjectAtIndex:indexPath.row];
+        [tableView reloadData];
+        
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        
+        
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
