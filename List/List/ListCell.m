@@ -7,6 +7,7 @@
 //
 
 #import "ListCell.h"
+//#import <QuartzCore/QuartzCore.h>
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 //  ^ Constant (not global) variable, never changes. Standard is to name it all capps.
@@ -34,6 +35,8 @@
             
             if (colorView.backgroundColor  == [UIColor clearColor]) {
                 colorView.backgroundColor = _itemInfo[@"color"];
+                
+                colorView.layer.borderWidth = 0;
             }
             
             else {
@@ -41,7 +44,8 @@
                 
                 // Try to add white border here
                 
-                colorView.layer.borderColor = (__bridge CGColorRef)([UIColor whiteColor]);
+                colorView.layer.borderColor = [UIColor whiteColor].CGColor;
+               
                 colorView.layer.borderWidth = 1;
             }
         }

@@ -147,7 +147,7 @@
     return 75;
 }
 
-
+// Changes the separator width to full screen but is buggy
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
