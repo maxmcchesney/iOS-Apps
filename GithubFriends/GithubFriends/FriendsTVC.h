@@ -10,6 +10,6 @@
 
 @interface FriendsTVC : UITableViewController
 
-- (void)seeDetail;
+//- (void)seeDetail;
 
 @end

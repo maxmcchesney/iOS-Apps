@@ -1,5 +1,5 @@
 //
-//  FriendDetailVC.h
+//  AppDelegate.h
 //  GithubFriends
 //
 //  Created by Michael McChesney on 1/8/15.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendDetailVC : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (nonatomic) NSDictionary * friendInfo;
-@property (nonatomic) NSString * username;
+@property (strong, nonatomic) UIWindow *window;
+
 
 @end
+

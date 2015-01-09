@@ -40,26 +40,21 @@
     // Do any additional setup after loading the view.
     
 //    NSLog(@"IT worked - %@", _friendInfo[@"login"]);
+
     
-    NSString * username = _friendInfo[@"login"];
-    
-    NSString * urlString = [NSString stringWithFormat:@"https:://api.github.com/users/%@/repos", username];
-    
-    NSURL * url = [NSURL URLWithString:urlString];
-    
-    NSURLRequest * request = [NSURLRequest requestWithURL:url];
-    
-    NSData * responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+//    NSString * username = self.friendInfo;
+//    
+//    NSLog(@"FriendDetailVC, username is: %@", self.username);
+//    
+//    NSString * urlString = [NSString stringWithFormat:@"https:://api.github.com/users/%@/repos", self.username];
+//    
+//    NSURL * url = [NSURL URLWithString:urlString];
+//    
+//    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+//    
+//    NSData * responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     
 //    NSArray * repos = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
-    
-//    NSLog(@"%@", repos);
-    
-//    for (id key in repos) {
-//        NSLog(@"key: %@, value: %@ \n", key, [repos objectForKey:key]);
-//    }
-    
-//    NSLog(@"%@", [repos valueForKeyPath:@"public_repos"]);
 
     //    Back
     UIButton * cancel = [[UIButton alloc] initWithFrame:CGRectMake(10, 175, 300, 40)];
@@ -67,10 +62,13 @@
     [cancel addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:cancel];
     //my code
-    cancel.backgroundColor = [UIColor redColor];
+    cancel.backgroundColor = [UIColor blueColor];
     cancel.layer.cornerRadius = 10;
     
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self request];
 }
 
 - (void)cancel {
@@ -78,6 +76,21 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(void)request {
+    
+    NSLog(@"FriendDetailVC, username is: %@", self.username);
+    
+    NSString * urlString = [NSString stringWithFormat:@"https:://api.github.com/users/%@/repos", self.username];
+    
+    NSURL * url = [NSURL URLWithString:urlString];
+    
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    
+    NSData * responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    NSLog(@"%@", responseData);
+    
+}
 
 //- (void)request {
 //    

@@ -82,26 +82,26 @@
 }
 
 // Presents new FrientDetailVC and passes along username
-- (void)seeDetail:username {
-    
-
-    UINavigationController *nC3 = [[UINavigationController alloc] init];
-    
-    FriendDetailVC *detailVC = [[FriendDetailVC alloc] init];
-    
-    detailVC.view.backgroundColor = [UIColor colorWithRed:0.729f green:0.804f blue:0.835f alpha:1.0f];
-    
-    detailVC.username = username;
-    
-    NSLog(@"login name %@", detailVC.username); // Log the value to the console when it's called
-    
-    nC3.viewControllers = @[detailVC];
-    
-    [self presentViewController:nC3 animated:YES completion:nil];
- 
-//    [[self navigationController] pushViewController:detailVC animated:YES];
-    
-}
+//- (void)seeDetail:username {
+//    
+//
+//    UINavigationController *nC3 = [[UINavigationController alloc] init];
+//    
+//    FriendDetailVC *detailVC = [[FriendDetailVC alloc] init];
+//    
+//    detailVC.view.backgroundColor = [UIColor colorWithRed:0.729f green:0.804f blue:0.835f alpha:1.0f];
+//    
+//    detailVC.username = username;
+//    
+//    NSLog(@"login name %@", detailVC.username); // Log the value to the console when it's called
+//    
+//    nC3.viewControllers = @[detailVC];
+//    
+//    [self presentViewController:nC3 animated:YES completion:nil];
+// 
+////    [[self navigationController] pushViewController:detailVC animated:YES];
+//    
+//}
 
 
 
@@ -141,23 +141,17 @@
     
     cell.imageView.image = image;
     
-    
     return cell;
 }
 
 //  FINALLY, when cell is selected FriendDetailVC is presented
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //    if (indexPath > 0) {    --> DONT NEED THIS, INDEXPATH IS AN OBJECT NOT A VALUE
-    //        NSLog(@"FINALLY");
+    FriendDetailVC * detailVC = [[FriendDetailVC alloc] init];
     
-    NSDictionary *selectedDict = friends[indexPath.row];
+    detailVC.friendInfo = friends[indexPath.row];
     
-    NSString * name = [selectedDict valueForKey:@"login"];
-    [self seeDetail:name];
-    
-    NSLog(@"FriendsTVC tableView Row selected, passing: %@", name);
-    
+    [self.navigationController pushViewController:detailVC animated:YES];
     
 }
 

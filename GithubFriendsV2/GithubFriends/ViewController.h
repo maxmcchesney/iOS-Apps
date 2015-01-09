@@ -1,5 +1,5 @@
 //
-//  FriendDetailVC.h
+//  ViewController.h
 //  GithubFriends
 //
 //  Created by Michael McChesney on 1/8/15.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendDetailVC : UIViewController
+@interface ViewController : UIViewController
 
-@property (nonatomic) NSDictionary * friendInfo;
-@property (nonatomic) NSString * username;
 
 @end
+
