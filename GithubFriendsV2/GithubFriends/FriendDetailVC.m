@@ -63,6 +63,16 @@
     
     [self.view addSubview:tableView];
     
+//    MY CODE HERE FOR PUTTING THE PIC ABOVE THE TABLE CELLS
+    UIImageView * viewPic = [[UIImageView alloc] initWithFrame:CGRectMake(0, 60, 320, 203)];
+    
+    viewPic.backgroundColor = [UIColor lightGrayColor];
+    
+    viewPic.image = self.avatar;
+
+    [self.view addSubview:viewPic];
+    
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -71,13 +81,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     
 //    Set up the repo info in the cells. Go to the URL in the browser and see what you want to display. We chose @"name" and @"descrition".
     
     cell.textLabel.text = repos[indexPath.row][@"name"];    //Two sets of [] allows you to access deeper info in an Array/Dictionary.
     
-    
+//    We originally had a crash here b/c some descriptions had a <null> value (which we saw in the error). T
+    if (repos[indexPath.row][@"description"] == [NSNull null]) {
+        
+    } else {
+        
+        cell.detailTextLabel.text = repos[indexPath.row][@"description"];
+        
+    }
     
     
     

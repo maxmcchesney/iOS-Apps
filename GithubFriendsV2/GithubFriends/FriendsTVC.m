@@ -147,9 +147,13 @@
 //  FINALLY, when cell is selected FriendDetailVC is presented
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    FriendCell * cell = (FriendCell *)[tableView cellForRowAtIndexPath:indexPath];
+    
     FriendDetailVC * detailVC = [[FriendDetailVC alloc] init];
     
     detailVC.friendInfo = friends[indexPath.row];
+    detailVC.avatar = cell.imageView.image;
     
     [self.navigationController pushViewController:detailVC animated:YES];
     

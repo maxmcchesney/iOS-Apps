@@ -11,5 +11,6 @@
 @interface FriendDetailVC : UIViewController
 
 @property (nonatomic) NSDictionary * friendInfo;
+@property (nonatomic) UIImage * avatar;
 
 @end

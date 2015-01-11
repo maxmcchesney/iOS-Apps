@@ -31,6 +31,7 @@
     //my code
     usernameField.backgroundColor = [UIColor whiteColor];
     usernameField.layer.cornerRadius = 5;
+//    usernameField.enablesReturnKeyAutomatically = YES;
     
 //    SAVE NEW USER
     UIButton * saveFriend = [[UIButton alloc] initWithFrame:CGRectMake(10, 125, 300, 40)];
@@ -40,6 +41,7 @@
     //my code
     saveFriend.backgroundColor = [UIColor greenColor];
     saveFriend.layer.cornerRadius = 10;
+    
     
 //    CANCEL ADD
     UIButton * cancel = [[UIButton alloc] initWithFrame:CGRectMake(10, 175, 300, 40)];
