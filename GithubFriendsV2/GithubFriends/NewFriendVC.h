@@ -12,6 +12,4 @@
 
 @property (nonatomic) NSMutableArray * friends;
 
-@property(nonatomic) BOOL * enablesReturnKeyAutomatically;
-
 @end

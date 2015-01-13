@@ -57,6 +57,7 @@
     
     self.navigationItem.rightBarButtonItem = addFriendButton;
 
+    self.view.backgroundColor = [UIColor colorWithRed:0.647f green:0.722f blue:0.757f alpha:1.0f];
     
     
 }
@@ -140,6 +141,9 @@
     UIImage * image = [UIImage imageWithData:imageData];
     
     cell.imageView.image = image;
+    
+    //Cell background color when not selected
+    cell.backgroundColor = [UIColor colorWithRed:0.757f green:0.643f blue:0.408f alpha:1.0f];
     
     return cell;
 }

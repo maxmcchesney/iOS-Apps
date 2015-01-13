@@ -31,7 +31,7 @@
     //my code
     usernameField.backgroundColor = [UIColor whiteColor];
     usernameField.layer.cornerRadius = 5;
-//    usernameField.enablesReturnKeyAutomatically = YES;
+//    usernameField.enablesReturnKeyAutomatically = YES;     - How to get the Return Key to work as well?
     
 //    SAVE NEW USER
     UIButton * saveFriend = [[UIButton alloc] initWithFrame:CGRectMake(10, 125, 300, 40)];
