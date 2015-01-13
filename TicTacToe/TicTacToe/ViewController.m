@@ -39,6 +39,8 @@
     UILabel * player2;
     
 //    int winCount;
+    
+    NSArray *playerColors;
 
 }
 
@@ -126,6 +128,7 @@
             UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(x + ((screenWidth-305)/2), y + 100, width, height)];
             button.backgroundColor = [UIColor blueColor];
             button.layer.cornerRadius = 47.5;
+            button.alpha = 0.6;   // Transparency
 //            [button setTitle:[NSString stringWithFormat:@"%d", buttonCount] forState:normal];
             button.tag = buttonCount;
             
