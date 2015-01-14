@@ -8,13 +8,6 @@
 
 #import "ViewController.h"
 
-//  DONE - Center squares on view
-//  DONE - Score Label on top that keeps track of wins for each player
-//  Make buttons change colors instead of title (reset colors to play again)
-//      ^ Might need 2 global instance variables that keeps track of player scores
-//  Button at bottom that resets game scores
-
-
 @interface ViewController () <UIAlertViewDelegate>
 
 @end
@@ -25,6 +18,7 @@
     
     int playerTurn;
     int turnCount;
+//    int winCount;
     
     NSMutableArray * squares;
     
@@ -37,9 +31,7 @@
     
     UILabel * player1;
     UILabel * player2;
-    
-//    int winCount;
-    
+
     NSArray *playerColors;
 
 }
@@ -48,8 +40,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-//    self.view.backgroundColor = [UIColor colorWithRed:0.647f green:0.722f blue:0.757f alpha:1.0f];
     
 //  GET SCREEN HEIGHT AND WIDTH FOR DYNAMIC SIZING
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
@@ -142,8 +132,6 @@
         }
         
     }
-    
-//    NSLog(@"subviews %@", self.view.subviews);
 
 }
 
@@ -152,7 +140,6 @@
 //  When button / square is tapped, do this...
     
     if ([squares[button.tag] intValue] != 0) { return; }    //don't allow changing button value
-    
     
     squares[button.tag] = @(playerTurn);    // This literal turns the parameter into an object
     
@@ -165,14 +152,11 @@
         button.backgroundColor = [UIColor redColor];
     }
     
-
 //    Change the player turn when button is pressed
     playerTurn = (playerTurn == 2) ? 1 : 2;
     
 //  Increment turnCount
     turnCount += 1;
-    
-//    NSLog(@"button tapped: %d", (int)button.tag);
     
     [self checkForWin];
     
@@ -199,10 +183,8 @@
     
 //    if (winCount < 1) {
     for (NSArray * possibility in possibilities) {
-        
         [self checkPossibility:possibility andPlayer:1];
         [self checkPossibility:possibility andPlayer:2];
-        
 //    }
     }
 }
@@ -217,14 +199,13 @@
         
         // player won
 //        winCount += 1;
-
         //Add win to score variable
         if (player == 1) {
             player1Score += 1;
         } else if (player == 2) {
             player2Score += 1;
         }
-//        NSLog(@"Player 1 Score: %d \nPlayer 2 Score: %d", player1Score, player2Score);
+
         player1.text = [NSString stringWithFormat:@"Player One: %d", player1Score];
         player2.text = [NSString stringWithFormat:@"Player Two: %d", player2Score];
         
@@ -242,18 +223,6 @@
         [alertView show];
         
     }
-    
-//    else if (turnCount == 9) {
-//        
-////        [self clearTiles];
-//        NSLog(@"Made it to Else If, turnCount is %d", turnCount);
-//        turnCount++;
-//        
-//        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"It's a tie!" delegate:self cancelButtonTitle:@"Play Again" otherButtonTitles: nil];
-//        
-//        [alertView show];
-//        return;
-//    }
     
 }
 
@@ -299,19 +268,6 @@
     NSLog(@"clearTiles Ran");
     
 }
-
-
-
-
-//- (void)reset:(UIButton *)button {
-////  Remove the popUpWinner button This is necessary for the old way to call the button after the game is over
-//
-//    [button removeFromSuperview];
-//    
-//    [self viewDidLoad];    DONT DO THIS
-//    
-//}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
