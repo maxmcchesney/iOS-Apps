@@ -90,14 +90,10 @@
 		D82756E21A65C11D0069E56D /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				D82757091A65C2290069E56D /* Rectangle.h */,
-				D827570A1A65C2290069E56D /* Rectangle.m */,
-				D827570F1A65C3170069E56D /* Triangle.h */,
-				D82757101A65C3170069E56D /* Triangle.m */,
-				D827570C1A65C3080069E56D /* Ellipse.h */,
-				D827570D1A65C3080069E56D /* Ellipse.m */,
+				D82757121A66B0620069E56D /* Shape Drawings */,
 				D82756EA1A65C11D0069E56D /* ViewController.h */,
 				D82756EB1A65C11D0069E56D /* ViewController.m */,
+				D82756ED1A65C11D0069E56D /* Main.storyboard */,
 				D82756E31A65C11D0069E56D /* Supporting Files */,
 			);
 			path = Shapes;
@@ -108,7 +104,6 @@
 			children = (
 				D82756E71A65C11D0069E56D /* AppDelegate.h */,
 				D82756E81A65C11D0069E56D /* AppDelegate.m */,
-				D82756ED1A65C11D0069E56D /* Main.storyboard */,
 				D82756F01A65C11D0069E56D /* Images.xcassets */,
 				D82756F21A65C11D0069E56D /* LaunchScreen.xib */,
 				D82756E41A65C11D0069E56D /* Info.plist */,
@@ -132,6 +127,19 @@
 				D82756FE1A65C11D0069E56D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D82757121A66B0620069E56D /* Shape Drawings */ = {
+			isa = PBXGroup;
+			children = (
+				D82757091A65C2290069E56D /* Rectangle.h */,
+				D827570A1A65C2290069E56D /* Rectangle.m */,
+				D827570F1A65C3170069E56D /* Triangle.h */,
+				D82757101A65C3170069E56D /* Triangle.m */,
+				D827570C1A65C3080069E56D /* Ellipse.h */,
+				D827570D1A65C3080069E56D /* Ellipse.m */,
+			);
+			name = "Shape Drawings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +438,7 @@
 				D82757051A65C11D0069E56D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D82757061A65C11D0069E56D /* Build configuration list for PBXNativeTarget "ShapesTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +447,7 @@
 				D82757081A65C11D0069E56D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

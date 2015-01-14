@@ -7,7 +7,7 @@
 //
 
 #import "Triangle.h"
-
+IB_DESIGNABLE
 @implementation Triangle
 
 
@@ -18,14 +18,27 @@
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
+    CGFloat padding = 50;
+    
     CGContextBeginPath(ctx);
-    CGContextMoveToPoint   (ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect));  // bottom left
-    CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMinY(rect));  // top middle
-    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMaxY(rect));  // bottom right
+    CGContextMoveToPoint   (ctx, CGRectGetMinX(rect)+padding, CGRectGetMaxY(rect)-padding);  // bottom left
+    CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMinY(rect)+padding);  // top middle
+    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect)-padding, CGRectGetMaxY(rect)-padding);  // bottom right
     CGContextClosePath(ctx);
     
     CGContextSetFillColorWithColor(ctx, [UIColor blueColor].CGColor);
     CGContextFillPath(ctx);
+    
+    [[UIColor redColor] set];
+    
+    CGContextBeginPath(ctx);
+    CGContextMoveToPoint   (ctx, CGRectGetMinX(rect)+padding, CGRectGetMaxY(rect)-padding);  // bottom left
+    CGContextAddLineToPoint(ctx, CGRectGetMidX(rect), CGRectGetMinY(rect)+padding);  // top middle
+    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect)-padding, CGRectGetMaxY(rect)-padding);  // bottom right
+    CGContextClosePath(ctx);
+    
+    CGContextSetLineWidth(ctx, 15);
+    CGContextStrokePath(ctx);
     
 }
 

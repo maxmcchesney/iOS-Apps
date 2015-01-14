@@ -10,4 +10,6 @@
 
 @interface Ellipse : UIView
 
+@property IBInspectable UIColor * fillColor;
+
 @end

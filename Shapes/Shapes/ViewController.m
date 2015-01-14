@@ -37,7 +37,7 @@
     int padding = 0;
     
     Rectangle *firstRectangle = [[Rectangle alloc] initWithFrame:CGRectMake(padding, padding, SCREEN_WIDTH-padding*2, (SCREEN_HEIGHT-padding)/3)];
-    firstRectangle.alpha = 1;
+    firstRectangle.alpha = .5;
     firstRectangle.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:firstRectangle];
 

@@ -7,7 +7,7 @@
 //
 
 #import "Rectangle.h"
-
+IB_DESIGNABLE
 @implementation Rectangle
 
 
@@ -18,16 +18,42 @@
     // Drawing code
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
+//Rectangle
+    CGFloat padding = 50;
     
+    [[UIColor brownColor] set];
+
     CGContextBeginPath(ctx);
-    CGContextMoveToPoint   (ctx, CGRectGetMinX(rect), CGRectGetMinY(rect));  // top left
-    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMinY(rect));  // top right
-    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect), CGRectGetMaxY(rect));  // bottom right
-    CGContextAddLineToPoint(ctx, CGRectGetMinX(rect), CGRectGetMaxY(rect));  // bottom left
+    CGContextMoveToPoint   (ctx, CGRectGetMinX(rect)+padding, CGRectGetMinY(rect)+padding);  // top left
+    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect)-padding, CGRectGetMinY(rect)+padding);  // top right
+    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect)-padding, CGRectGetMaxY(rect)-padding);  // bottom right
+    CGContextAddLineToPoint(ctx, CGRectGetMinX(rect)+padding, CGRectGetMaxY(rect)-padding);  // bottom left
     CGContextClosePath(ctx);
     
-    CGContextSetFillColorWithColor(ctx, [UIColor brownColor].CGColor);
+//    For x and y above, could have used rect.size.width and rect.size.height
+//    CGContextSetFillColorWithColor(ctx, [UIColor brownColor].CGColor);     Slow way
     CGContextFillPath(ctx);
+    
+//    Stoke border
+    [[UIColor blackColor] set];
+    
+    CGContextBeginPath(ctx);
+    CGContextMoveToPoint   (ctx, CGRectGetMinX(rect)+padding, CGRectGetMinY(rect)+padding);  // top left
+    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect)-padding, CGRectGetMinY(rect)+padding);  // top right
+    CGContextAddLineToPoint(ctx, CGRectGetMaxX(rect)-padding, CGRectGetMaxY(rect)-padding);  // bottom right
+    CGContextAddLineToPoint(ctx, CGRectGetMinX(rect)+padding, CGRectGetMaxY(rect)-padding);  // bottom left
+    CGContextClosePath(ctx);
+    
+    CGContextSetLineWidth(ctx, 15);
+    CGContextStrokePath(ctx);
+    
+    
+    
+//    Easy way to fill a rectangle
+//    CGContextRef ctx = UIGraphicsGetCurrentContext();
+//    CGContextFillRect(ctx, rect);
+//    [[UIColor brownColor] set];
+//    CGContextFillRect(ctx, rect);
     
 
 
