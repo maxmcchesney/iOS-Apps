@@ -15,6 +15,8 @@
 		D82757301A66C7A80069E56D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D827572E1A66C7A80069E56D /* LaunchScreen.xib */; };
 		D827573C1A66C7A90069E56D /* ScribbleTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D827573B1A66C7A90069E56D /* ScribbleTouchTests.m */; };
 		D82757471A66C8160069E56D /* ScribbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82757461A66C8160069E56D /* ScribbleView.m */; };
+		D82757851A66F8610069E56D /* roundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D82757841A66F8610069E56D /* roundedButton.m */; };
+		D827578B1A671DC60069E56D /* eraserEdited.png in Resources */ = {isa = PBXBuildFile; fileRef = D827578A1A671DC60069E56D /* eraserEdited.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		D827573B1A66C7A90069E56D /* ScribbleTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleTouchTests.m; sourceTree = "<group>"; };
 		D82757451A66C8160069E56D /* ScribbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleView.h; sourceTree = "<group>"; };
 		D82757461A66C8160069E56D /* ScribbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleView.m; sourceTree = "<group>"; };
+		D82757831A66F8610069E56D /* roundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = roundedButton.h; sourceTree = "<group>"; };
+		D82757841A66F8610069E56D /* roundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = roundedButton.m; sourceTree = "<group>"; };
+		D827578A1A671DC60069E56D /* eraserEdited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eraserEdited.png; path = ../eraserEdited.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,8 @@
 		D827571E1A66C7A80069E56D /* ScribbleTouch */ = {
 			isa = PBXGroup;
 			children = (
+				D82757831A66F8610069E56D /* roundedButton.h */,
+				D82757841A66F8610069E56D /* roundedButton.m */,
 				D82757451A66C8160069E56D /* ScribbleView.h */,
 				D82757461A66C8160069E56D /* ScribbleView.m */,
 				D82757261A66C7A80069E56D /* ViewController.h */,
@@ -97,6 +104,7 @@
 		D827571F1A66C7A80069E56D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D827578A1A671DC60069E56D /* eraserEdited.png */,
 				D82757231A66C7A80069E56D /* AppDelegate.h */,
 				D82757241A66C7A80069E56D /* AppDelegate.m */,
 				D827572C1A66C7A80069E56D /* Images.xcassets */,
@@ -205,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D827572B1A66C7A80069E56D /* Main.storyboard in Resources */,
+				D827578B1A671DC60069E56D /* eraserEdited.png in Resources */,
 				D82757301A66C7A80069E56D /* LaunchScreen.xib in Resources */,
 				D827572D1A66C7A80069E56D /* Images.xcassets in Resources */,
 			);
@@ -225,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D82757281A66C7A80069E56D /* ViewController.m in Sources */,
+				D82757851A66F8610069E56D /* roundedButton.m in Sources */,
 				D82757251A66C7A80069E56D /* AppDelegate.m in Sources */,
 				D82757471A66C8160069E56D /* ScribbleView.m in Sources */,
 				D82757221A66C7A80069E56D /* main.m in Sources */,

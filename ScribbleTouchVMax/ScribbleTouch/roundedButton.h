@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  roundedButton.h
 //  ScribbleTouch
 //
 //  Created by Michael McChesney on 1/14/15.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface roundedButton : UIButton
+
+@property (nonatomic) IBInspectable CGFloat cornerSize;
 
 @end
-

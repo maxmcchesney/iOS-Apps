@@ -45,6 +45,11 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
+    // TO ADD STROKE AS YOU DRAW
+    
+    CGContextSetLineJoin(context, kCGLineJoinRound);
+    CGContextSetLineCap(context, kCGLineCapRound);
+    
     for (NSDictionary *scribble in self.scribbles) {
 
         CGContextSetLineWidth(context, [scribble[@"strokeWidth"] floatValue]);
@@ -64,6 +69,29 @@
         }
         
         CGContextStrokePath(context);
+        
+    }
+    
+    // TO ADD FILL AS YOU DRAW
+    for (NSDictionary *scribble in self.scribbles) {
+        
+//        CGContextSetLineWidth(context, [scribble[@"strokeWidth"] floatValue]);
+        
+        UIColor *fillColor = scribble[@"fillColor"];
+        [fillColor set];
+        
+        CGPoint firstPoint = [scribble[@"points"][0] CGPointValue]; // could also have done allObjects firstObject instead of [0].
+        CGContextMoveToPoint(context, firstPoint.x, firstPoint.y);
+        
+        for (NSValue * pointValue in scribble[@"points"]) {
+            
+            CGPoint point = [pointValue CGPointValue];
+            
+            CGContextAddLineToPoint(context, point.x, point.y);
+            
+        }
+        
+        CGContextFillPath(context);
         
     }
     
