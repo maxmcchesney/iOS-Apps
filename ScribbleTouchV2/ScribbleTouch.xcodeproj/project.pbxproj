@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9F572C41A66C7BB007B1EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C31A66C7BB007B1EEA /* main.m */; };
+		A9F572C71A66C7BB007B1EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C61A66C7BB007B1EEA /* AppDelegate.m */; };
+		A9F572CA1A66C7BB007B1EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C91A66C7BB007B1EEA /* ViewController.m */; };
+		A9F572CD1A66C7BB007B1EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F572CB1A66C7BB007B1EEA /* Main.storyboard */; };
+		A9F572CF1A66C7BB007B1EEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F572CE1A66C7BB007B1EEA /* Images.xcassets */; };
+		A9F572D21A66C7BB007B1EEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9F572D01A66C7BB007B1EEA /* LaunchScreen.xib */; };
+		A9F572DE1A66C7BB007B1EEA /* ScribbleTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572DD1A66C7BB007B1EEA /* ScribbleTouchTests.m */; };
+		A9F572E91A66C81E007B1EEA /* ScribbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572E81A66C81E007B1EEA /* ScribbleView.m */; };
+		D827578E1A6819600069E56D /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D827578D1A6819600069E56D /* ChoiceViewController.m */; };
+		D82757941A6964190069E56D /* roundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D82757931A6964190069E56D /* roundedButton.m */; };
+		D82757971A6971070069E56D /* CustomSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D82757961A6971070069E56D /* CustomSlider.m */; };
+		D827579D1A69D8E10069E56D /* EraserButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D827579C1A69D8E10069E56D /* EraserButton.m */; };
+		D827579F1A69FF130069E56D /* eraserEdited.png in Resources */ = {isa = PBXBuildFile; fileRef = D827579E1A69FF130069E56D /* eraserEdited.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9F572D81A66C7BB007B1EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F572B61A66C7BB007B1EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9F572BD1A66C7BB007B1EEA;
+			remoteInfo = ScribbleTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9F572BE1A66C7BB007B1EEA /* ScribbleTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScribbleTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F572C21A66C7BB007B1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F572C31A66C7BB007B1EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9F572C51A66C7BB007B1EEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9F572C61A66C7BB007B1EEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9F572C81A66C7BB007B1EEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9F572C91A66C7BB007B1EEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9F572CC1A66C7BB007B1EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9F572CE1A66C7BB007B1EEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9F572D11A66C7BB007B1EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A9F572D71A66C7BB007B1EEA /* ScribbleTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScribbleTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F572DC1A66C7BB007B1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F572DD1A66C7BB007B1EEA /* ScribbleTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleTouchTests.m; sourceTree = "<group>"; };
+		A9F572E71A66C81E007B1EEA /* ScribbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleView.h; sourceTree = "<group>"; };
+		A9F572E81A66C81E007B1EEA /* ScribbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleView.m; sourceTree = "<group>"; };
+		D827578C1A6819600069E56D /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		D827578D1A6819600069E56D /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
+		D82757921A6964190069E56D /* roundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = roundedButton.h; sourceTree = "<group>"; };
+		D82757931A6964190069E56D /* roundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = roundedButton.m; sourceTree = "<group>"; };
+		D82757951A6971070069E56D /* CustomSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSlider.h; sourceTree = "<group>"; };
+		D82757961A6971070069E56D /* CustomSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSlider.m; sourceTree = "<group>"; };
+		D827579B1A69D8E10069E56D /* EraserButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraserButton.h; sourceTree = "<group>"; };
+		D827579C1A69D8E10069E56D /* EraserButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraserButton.m; sourceTree = "<group>"; };
+		D827579E1A69FF130069E56D /* eraserEdited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eraserEdited.png; path = ../eraserEdited.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9F572BB1A66C7BB007B1EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F572D41A66C7BB007B1EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9F572B51A66C7BB007B1EEA = {
+			isa = PBXGroup;
+			children = (
+				A9F572C01A66C7BB007B1EEA /* ScribbleTouch */,
+				A9F572DA1A66C7BB007B1EEA /* ScribbleTouchTests */,
+				A9F572BF1A66C7BB007B1EEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9F572BF1A66C7BB007B1EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9F572BE1A66C7BB007B1EEA /* ScribbleTouch.app */,
+				A9F572D71A66C7BB007B1EEA /* ScribbleTouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9F572C01A66C7BB007B1EEA /* ScribbleTouch */ = {
+			isa = PBXGroup;
+			children = (
+				D82757951A6971070069E56D /* CustomSlider.h */,
+				D82757961A6971070069E56D /* CustomSlider.m */,
+				D827579B1A69D8E10069E56D /* EraserButton.h */,
+				D827579C1A69D8E10069E56D /* EraserButton.m */,
+				D82757921A6964190069E56D /* roundedButton.h */,
+				D82757931A6964190069E56D /* roundedButton.m */,
+				D827578C1A6819600069E56D /* ChoiceViewController.h */,
+				D827578D1A6819600069E56D /* ChoiceViewController.m */,
+				A9F572E71A66C81E007B1EEA /* ScribbleView.h */,
+				A9F572E81A66C81E007B1EEA /* ScribbleView.m */,
+				A9F572C81A66C7BB007B1EEA /* ViewController.h */,
+				A9F572C91A66C7BB007B1EEA /* ViewController.m */,
+				A9F572CB1A66C7BB007B1EEA /* Main.storyboard */,
+				A9F572C11A66C7BB007B1EEA /* Supporting Files */,
+			);
+			path = ScribbleTouch;
+			sourceTree = "<group>";
+		};
+		A9F572C11A66C7BB007B1EEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D827579E1A69FF130069E56D /* eraserEdited.png */,
+				A9F572C51A66C7BB007B1EEA /* AppDelegate.h */,
+				A9F572C61A66C7BB007B1EEA /* AppDelegate.m */,
+				A9F572CE1A66C7BB007B1EEA /* Images.xcassets */,
+				A9F572D01A66C7BB007B1EEA /* LaunchScreen.xib */,
+				A9F572C21A66C7BB007B1EEA /* Info.plist */,
+				A9F572C31A66C7BB007B1EEA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9F572DA1A66C7BB007B1EEA /* ScribbleTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9F572DD1A66C7BB007B1EEA /* ScribbleTouchTests.m */,
+				A9F572DB1A66C7BB007B1EEA /* Supporting Files */,
+			);
+			path = ScribbleTouchTests;
+			sourceTree = "<group>";
+		};
+		A9F572DB1A66C7BB007B1EEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9F572DC1A66C7BB007B1EEA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9F572BD1A66C7BB007B1EEA /* ScribbleTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F572E11A66C7BB007B1EEA /* Build configuration list for PBXNativeTarget "ScribbleTouch" */;
+			buildPhases = (
+				A9F572BA1A66C7BB007B1EEA /* Sources */,
+				A9F572BB1A66C7BB007B1EEA /* Frameworks */,
+				A9F572BC1A66C7BB007B1EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScribbleTouch;
+			productName = ScribbleTouch;
+			productReference = A9F572BE1A66C7BB007B1EEA /* ScribbleTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9F572D61A66C7BB007B1EEA /* ScribbleTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F572E41A66C7BB007B1EEA /* Build configuration list for PBXNativeTarget "ScribbleTouchTests" */;
+			buildPhases = (
+				A9F572D31A66C7BB007B1EEA /* Sources */,
+				A9F572D41A66C7BB007B1EEA /* Frameworks */,
+				A9F572D51A66C7BB007B1EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9F572D91A66C7BB007B1EEA /* PBXTargetDependency */,
+			);
+			name = ScribbleTouchTests;
+			productName = ScribbleTouchTests;
+			productReference = A9F572D71A66C7BB007B1EEA /* ScribbleTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9F572B61A66C7BB007B1EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A9F572BD1A66C7BB007B1EEA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A9F572D61A66C7BB007B1EEA = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A9F572BD1A66C7BB007B1EEA;
+					};
+				};
+			};
+			buildConfigurationList = A9F572B91A66C7BB007B1EEA /* Build configuration list for PBXProject "ScribbleTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9F572B51A66C7BB007B1EEA;
+			productRefGroup = A9F572BF1A66C7BB007B1EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9F572BD1A66C7BB007B1EEA /* ScribbleTouch */,
+				A9F572D61A66C7BB007B1EEA /* ScribbleTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9F572BC1A66C7BB007B1EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D827579F1A69FF130069E56D /* eraserEdited.png in Resources */,
+				A9F572CD1A66C7BB007B1EEA /* Main.storyboard in Resources */,
+				A9F572D21A66C7BB007B1EEA /* LaunchScreen.xib in Resources */,
+				A9F572CF1A66C7BB007B1EEA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F572D51A66C7BB007B1EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9F572BA1A66C7BB007B1EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F572CA1A66C7BB007B1EEA /* ViewController.m in Sources */,
+				A9F572C71A66C7BB007B1EEA /* AppDelegate.m in Sources */,
+				A9F572E91A66C81E007B1EEA /* ScribbleView.m in Sources */,
+				D82757941A6964190069E56D /* roundedButton.m in Sources */,
+				D82757971A6971070069E56D /* CustomSlider.m in Sources */,
+				D827578E1A6819600069E56D /* ChoiceViewController.m in Sources */,
+				A9F572C41A66C7BB007B1EEA /* main.m in Sources */,
+				D827579D1A69D8E10069E56D /* EraserButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F572D31A66C7BB007B1EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F572DE1A66C7BB007B1EEA /* ScribbleTouchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9F572D91A66C7BB007B1EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9F572BD1A66C7BB007B1EEA /* ScribbleTouch */;
+			targetProxy = A9F572D81A66C7BB007B1EEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9F572CB1A66C7BB007B1EEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9F572CC1A66C7BB007B1EEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9F572D01A66C7BB007B1EEA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9F572D11A66C7BB007B1EEA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9F572DF1A66C7BB007B1EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9F572E01A66C7BB007B1EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9F572E21A66C7BB007B1EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScribbleTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9F572E31A66C7BB007B1EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScribbleTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A9F572E51A66C7BB007B1EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScribbleTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScribbleTouch.app/ScribbleTouch";
+			};
+			name = Debug;
+		};
+		A9F572E61A66C7BB007B1EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScribbleTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScribbleTouch.app/ScribbleTouch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9F572B91A66C7BB007B1EEA /* Build configuration list for PBXProject "ScribbleTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F572DF1A66C7BB007B1EEA /* Debug */,
+				A9F572E01A66C7BB007B1EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F572E11A66C7BB007B1EEA /* Build configuration list for PBXNativeTarget "ScribbleTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F572E21A66C7BB007B1EEA /* Debug */,
+				A9F572E31A66C7BB007B1EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F572E41A66C7BB007B1EEA /* Build configuration list for PBXNativeTarget "ScribbleTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F572E51A66C7BB007B1EEA /* Debug */,
+				A9F572E61A66C7BB007B1EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9F572B61A66C7BB007B1EEA /* Project object */;
+}

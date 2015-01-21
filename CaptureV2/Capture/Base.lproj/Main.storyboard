@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bdh-qL-9wr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lp0-TS-jKd">
+                                <rect key="frame" x="0.0" y="74" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lp0-TS-jKd" secondAttribute="height" multiplier="1:1" id="QIw-LP-iaF"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-4X-WW9">
+                                <rect key="frame" x="120" y="434" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.87843137250000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="dyE-zN-YhL"/>
+                                    <constraint firstAttribute="height" constant="80" id="hUB-xy-3CU"/>
+                                </constraints>
+                                <state key="normal" image="camera44.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-ya-RKN">
+                                <rect key="frame" x="59" y="454" width="32" height="36"/>
+                                <color key="backgroundColor" red="0.89411771299999998" green="0.13333334029999999" blue="0.1764705926" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="eWD-z1-Mwb"/>
+                                    <constraint firstAttribute="height" constant="40" id="nGZ-Jo-aXy"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="4" minY="5" maxX="4" maxY="5"/>
+                                <state key="normal" image="polaroid2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-IO-482">
+                                <rect key="frame" x="70" y="400" width="180" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="lZ3-pn-bXq"/>
+                                    <constraint firstAttribute="height" constant="28" id="xR0-F2-Xcv"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Photo"/>
+                                    <segment title="Video"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VhR-ya-RKN" firstAttribute="top" secondItem="Lp0-TS-jKd" secondAttribute="bottom" constant="60" id="0Qx-Og-FjA"/>
+                            <constraint firstItem="Lp0-TS-jKd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5Gx-ej-BwN"/>
+                            <constraint firstAttribute="centerX" secondItem="PPT-4X-WW9" secondAttribute="centerX" id="BTc-Gv-d8y"/>
+                            <constraint firstAttribute="centerX" secondItem="g0J-IO-482" secondAttribute="centerX" id="DEu-CZ-E09"/>
+                            <constraint firstItem="Lp0-TS-jKd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="LSm-Q6-fRk"/>
+                            <constraint firstItem="PPT-4X-WW9" firstAttribute="leading" secondItem="VhR-ya-RKN" secondAttribute="trailing" constant="29" id="YuC-yu-dUE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lp0-TS-jKd" secondAttribute="trailing" constant="-16" id="cpB-hi-STD"/>
+                            <constraint firstItem="g0J-IO-482" firstAttribute="top" secondItem="Lp0-TS-jKd" secondAttribute="bottom" constant="6" id="y8w-8j-duU"/>
+                            <constraint firstItem="PPT-4X-WW9" firstAttribute="top" secondItem="Lp0-TS-jKd" secondAttribute="bottom" constant="40" id="zYH-K7-TM1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f1F-0t-LZt">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="bRB-Ag-Q1f">
+                            <rect key="frame" x="70" y="7.5" width="180" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Front"/>
+                                <segment title="Rear"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="cameraView" destination="Lp0-TS-jKd" id="p28-Wk-tqh"/>
+                        <outlet property="deviceChoiceButton" destination="bRB-Ag-Q1f" id="sJo-Zk-GwQ"/>
+                        <outlet property="mediaChoiceButton" destination="g0J-IO-482" id="sMI-uq-Ycj"/>
+                        <outlet property="openPhotoLibraryButton" destination="VhR-ya-RKN" id="erC-hg-zkg"/>
+                        <outlet property="takeMediaButton" destination="PPT-4X-WW9" id="Up5-0O-ofp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="290"/>
+        </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="53D-zd-6sc">
+            <objects>
+                <viewController storyboardIdentifier="filterVC" id="z8E-6r-pCX" customClass="FilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UNK-JD-MpC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ikt-0p-NBq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UMo-e1-b7P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cD-qT-zeh">
+                                <rect key="frame" x="0.0" y="65" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2cD-qT-zeh" secondAttribute="height" multiplier="1:1" id="8bM-vP-7A3"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bGO-qj-YfZ">
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="d33-SV-RfO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dyd-f9-Kcy">
+                                    <size key="itemSize" width="60" height="60"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JQO-DD-uYY">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2cD-qT-zeh" firstAttribute="top" secondItem="UNK-JD-MpC" secondAttribute="bottom" constant="45" id="DQE-W0-JPC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2cD-qT-zeh" secondAttribute="trailing" constant="-16" id="NjD-I0-Xk7"/>
+                            <constraint firstItem="2cD-qT-zeh" firstAttribute="leading" secondItem="UMo-e1-b7P" secondAttribute="leadingMargin" constant="-16" id="PpE-1l-HpC"/>
+                            <constraint firstItem="bGO-qj-YfZ" firstAttribute="leading" secondItem="UMo-e1-b7P" secondAttribute="leadingMargin" constant="-16" id="hAT-lX-CSt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bGO-qj-YfZ" secondAttribute="trailing" constant="-16" id="ijN-q2-Rjg"/>
+                            <constraint firstItem="Ikt-0p-NBq" firstAttribute="top" secondItem="bGO-qj-YfZ" secondAttribute="bottom" id="t1e-Nw-8jE"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="filterCollectionView" destination="bGO-qj-YfZ" id="qgV-bQ-BnY"/>
+                        <outlet property="filterImageView" destination="2cD-qT-zeh" id="1di-1f-sSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzW-lt-iHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656" y="290"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FVS-uR-nEN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bdh-qL-9wr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lUB-4s-XMK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="PzL-s5-kFg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwb-z2-BZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="290"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera44.png" width="32" height="32"/>
+        <image name="polaroid2.png" width="32" height="36"/>
+    </resources>
+</document>
