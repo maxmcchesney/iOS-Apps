@@ -15,9 +15,14 @@
 		A934504C1A6E985800663CB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A934504A1A6E985800663CB3 /* LaunchScreen.xib */; };
 		A93450581A6E985800663CB3 /* CaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A93450571A6E985800663CB3 /* CaptureTests.m */; };
 		A93450631A6EAD9700663CB3 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93450621A6EAD9700663CB3 /* FilterViewController.m */; };
+		D8274CBA1A705AD10019823C /* movie36.png in Resources */ = {isa = PBXBuildFile; fileRef = D8274CB91A705AD10019823C /* movie36.png */; };
+		D8274CBC1A705B040019823C /* stop46.png in Resources */ = {isa = PBXBuildFile; fileRef = D8274CBB1A705B040019823C /* stop46.png */; };
 		D858B39D1A6FF8D500FC93B3 /* polaroid2.png in Resources */ = {isa = PBXBuildFile; fileRef = D858B39C1A6FF8D500FC93B3 /* polaroid2.png */; };
 		D858B39F1A6FF91200FC93B3 /* camera44.png in Resources */ = {isa = PBXBuildFile; fileRef = D858B39E1A6FF91200FC93B3 /* camera44.png */; };
 		D858B3A11A6FF91800FC93B3 /* camera60.png in Resources */ = {isa = PBXBuildFile; fileRef = D858B3A01A6FF91800FC93B3 /* camera60.png */; };
+		D858B3A41A700F1000FC93B3 /* FilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D858B3A31A700F1000FC93B3 /* FilterCell.m */; };
+		D858B3A71A70332E00FC93B3 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D858B3A61A70332E00FC93B3 /* CustomButton.m */; };
+		D858B3AA1A70383300FC93B3 /* SlickSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D858B3A91A70383300FC93B3 /* SlickSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +51,17 @@
 		A93450571A6E985800663CB3 /* CaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptureTests.m; sourceTree = "<group>"; };
 		A93450611A6EAD9700663CB3 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		A93450621A6EAD9700663CB3 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		D8274CB91A705AD10019823C /* movie36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movie36.png; path = ../movie36.png; sourceTree = "<group>"; };
+		D8274CBB1A705B040019823C /* stop46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop46.png; path = ../stop46.png; sourceTree = "<group>"; };
 		D858B39C1A6FF8D500FC93B3 /* polaroid2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = polaroid2.png; path = ../polaroid2.png; sourceTree = "<group>"; };
 		D858B39E1A6FF91200FC93B3 /* camera44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera44.png; path = ../camera44.png; sourceTree = "<group>"; };
 		D858B3A01A6FF91800FC93B3 /* camera60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera60.png; path = ../camera60.png; sourceTree = "<group>"; };
+		D858B3A21A700F1000FC93B3 /* FilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCell.h; sourceTree = "<group>"; };
+		D858B3A31A700F1000FC93B3 /* FilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCell.m; sourceTree = "<group>"; };
+		D858B3A51A70332E00FC93B3 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		D858B3A61A70332E00FC93B3 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		D858B3A81A70383300FC93B3 /* SlickSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlickSlider.h; sourceTree = "<group>"; };
+		D858B3A91A70383300FC93B3 /* SlickSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlickSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +107,12 @@
 				A93450431A6E985800663CB3 /* ViewController.m */,
 				A93450611A6EAD9700663CB3 /* FilterViewController.h */,
 				A93450621A6EAD9700663CB3 /* FilterViewController.m */,
+				D858B3A21A700F1000FC93B3 /* FilterCell.h */,
+				D858B3A31A700F1000FC93B3 /* FilterCell.m */,
+				D858B3A81A70383300FC93B3 /* SlickSlider.h */,
+				D858B3A91A70383300FC93B3 /* SlickSlider.m */,
+				D858B3A51A70332E00FC93B3 /* CustomButton.h */,
+				D858B3A61A70332E00FC93B3 /* CustomButton.m */,
 				A93450451A6E985800663CB3 /* Main.storyboard */,
 				A934503B1A6E985800663CB3 /* Supporting Files */,
 			);
@@ -103,6 +122,8 @@
 		A934503B1A6E985800663CB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8274CBB1A705B040019823C /* stop46.png */,
+				D8274CB91A705AD10019823C /* movie36.png */,
 				D858B3A01A6FF91800FC93B3 /* camera60.png */,
 				D858B39E1A6FF91200FC93B3 /* camera44.png */,
 				D858B39C1A6FF8D500FC93B3 /* polaroid2.png */,
@@ -218,6 +239,8 @@
 				A93450471A6E985800663CB3 /* Main.storyboard in Resources */,
 				A934504C1A6E985800663CB3 /* LaunchScreen.xib in Resources */,
 				D858B3A11A6FF91800FC93B3 /* camera60.png in Resources */,
+				D8274CBC1A705B040019823C /* stop46.png in Resources */,
+				D8274CBA1A705AD10019823C /* movie36.png in Resources */,
 				A93450491A6E985800663CB3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,9 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D858B3A71A70332E00FC93B3 /* CustomButton.m in Sources */,
 				A93450441A6E985800663CB3 /* ViewController.m in Sources */,
+				D858B3A41A700F1000FC93B3 /* FilterCell.m in Sources */,
 				A93450411A6E985800663CB3 /* AppDelegate.m in Sources */,
 				A93450631A6EAD9700663CB3 /* FilterViewController.m in Sources */,
+				D858B3AA1A70383300FC93B3 /* SlickSlider.m in Sources */,
 				A934503E1A6E985800663CB3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,28 +25,95 @@
                                     <constraint firstAttribute="width" secondItem="Lp0-TS-jKd" secondAttribute="height" multiplier="1:1" id="QIw-LP-iaF"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-4X-WW9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P93-fp-cRm" customClass="CustomButton">
                                 <rect key="frame" x="120" y="434" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.019607843140000001" green="0.87843137250000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2bO-hQ-hVG"/>
+                                    <constraint firstAttribute="height" constant="80" id="nEQ-vN-yqS"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="3"/>
+                                <state key="normal" image="movie36.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owK-Du-NQe" customClass="CustomButton">
+                                <rect key="frame" x="120" y="434" width="80" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3W1-ee-NUh"/>
+                                    <constraint firstAttribute="height" constant="80" id="DpZ-u6-yd8"/>
+                                </constraints>
+                                <state key="normal" image="stop46.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-4X-WW9" customClass="CustomButton">
+                                <rect key="frame" x="120" y="434" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="dyE-zN-YhL"/>
                                     <constraint firstAttribute="height" constant="80" id="hUB-xy-3CU"/>
                                 </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
                                 <state key="normal" image="camera44.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-ya-RKN">
-                                <rect key="frame" x="59" y="454" width="32" height="36"/>
-                                <color key="backgroundColor" red="0.89411771299999998" green="0.13333334029999999" blue="0.1764705926" alpha="1" colorSpace="deviceRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-ya-RKN" customClass="CustomButton">
+                                <rect key="frame" x="51" y="454" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="eWD-z1-Mwb"/>
                                     <constraint firstAttribute="height" constant="40" id="nGZ-Jo-aXy"/>
                                 </constraints>
-                                <inset key="contentEdgeInsets" minX="4" minY="5" maxX="4" maxY="5"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="7"/>
                                 <state key="normal" image="polaroid2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-IO-482">
                                 <rect key="frame" x="70" y="400" width="180" height="29"/>
@@ -66,9 +133,13 @@
                             <constraint firstItem="Lp0-TS-jKd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5Gx-ej-BwN"/>
                             <constraint firstAttribute="centerX" secondItem="PPT-4X-WW9" secondAttribute="centerX" id="BTc-Gv-d8y"/>
                             <constraint firstAttribute="centerX" secondItem="g0J-IO-482" secondAttribute="centerX" id="DEu-CZ-E09"/>
+                            <constraint firstItem="P93-fp-cRm" firstAttribute="top" secondItem="g0J-IO-482" secondAttribute="bottom" constant="6" id="Dyd-JO-NPh"/>
                             <constraint firstItem="Lp0-TS-jKd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="LSm-Q6-fRk"/>
+                            <constraint firstItem="P93-fp-cRm" firstAttribute="leading" secondItem="VhR-ya-RKN" secondAttribute="trailing" constant="29" id="Vjc-cj-9wv"/>
                             <constraint firstItem="PPT-4X-WW9" firstAttribute="leading" secondItem="VhR-ya-RKN" secondAttribute="trailing" constant="29" id="YuC-yu-dUE"/>
+                            <constraint firstItem="owK-Du-NQe" firstAttribute="leading" secondItem="VhR-ya-RKN" secondAttribute="trailing" constant="29" id="aRl-Nx-Ax5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lp0-TS-jKd" secondAttribute="trailing" constant="-16" id="cpB-hi-STD"/>
+                            <constraint firstItem="owK-Du-NQe" firstAttribute="top" secondItem="g0J-IO-482" secondAttribute="bottom" constant="6" id="hCz-Vn-OLt"/>
                             <constraint firstItem="g0J-IO-482" firstAttribute="top" secondItem="Lp0-TS-jKd" secondAttribute="bottom" constant="6" id="y8w-8j-duU"/>
                             <constraint firstItem="PPT-4X-WW9" firstAttribute="top" secondItem="Lp0-TS-jKd" secondAttribute="bottom" constant="40" id="zYH-K7-TM1"/>
                         </constraints>
@@ -91,6 +162,8 @@
                         <outlet property="deviceChoiceButton" destination="bRB-Ag-Q1f" id="sJo-Zk-GwQ"/>
                         <outlet property="mediaChoiceButton" destination="g0J-IO-482" id="sMI-uq-Ycj"/>
                         <outlet property="openPhotoLibraryButton" destination="VhR-ya-RKN" id="erC-hg-zkg"/>
+                        <outlet property="recordButton" destination="P93-fp-cRm" id="gKD-p1-h8b"/>
+                        <outlet property="stopRecordButton" destination="owK-Du-NQe" id="xbZ-sF-lLC"/>
                         <outlet property="takeMediaButton" destination="PPT-4X-WW9" id="Up5-0O-ofp"/>
                     </connections>
                 </viewController>
@@ -110,7 +183,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cD-qT-zeh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cD-qT-zeh">
                                 <rect key="frame" x="0.0" y="65" width="320" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2cD-qT-zeh" secondAttribute="height" multiplier="1:1" id="8bM-vP-7A3"/>
@@ -128,23 +201,50 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JQO-DD-uYY">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filterCell" id="JQO-DD-uYY" customClass="FilterCell">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efF-m0-gvn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="efF-m0-gvn" id="25U-SF-YYH"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7da-5N-CC4" customClass="SlickSlider">
+                                <rect key="frame" x="0.0" y="448" width="320" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="C6Z-Tp-i0m"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPosition">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="sliderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="reverseColor" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2cD-qT-zeh" firstAttribute="top" secondItem="UNK-JD-MpC" secondAttribute="bottom" constant="45" id="DQE-W0-JPC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2cD-qT-zeh" secondAttribute="trailing" constant="-16" id="NjD-I0-Xk7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7da-5N-CC4" secondAttribute="trailing" constant="-16" id="P1h-R7-Cve"/>
                             <constraint firstItem="2cD-qT-zeh" firstAttribute="leading" secondItem="UMo-e1-b7P" secondAttribute="leadingMargin" constant="-16" id="PpE-1l-HpC"/>
+                            <constraint firstItem="7da-5N-CC4" firstAttribute="leading" secondItem="UMo-e1-b7P" secondAttribute="leadingMargin" constant="-16" id="TVW-hU-jxl"/>
+                            <constraint firstItem="bGO-qj-YfZ" firstAttribute="top" secondItem="7da-5N-CC4" secondAttribute="bottom" id="gNX-fD-yfS"/>
                             <constraint firstItem="bGO-qj-YfZ" firstAttribute="leading" secondItem="UMo-e1-b7P" secondAttribute="leadingMargin" constant="-16" id="hAT-lX-CSt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bGO-qj-YfZ" secondAttribute="trailing" constant="-16" id="ijN-q2-Rjg"/>
                             <constraint firstItem="Ikt-0p-NBq" firstAttribute="top" secondItem="bGO-qj-YfZ" secondAttribute="bottom" id="t1e-Nw-8jE"/>
@@ -155,6 +255,7 @@
                     <connections>
                         <outlet property="filterCollectionView" destination="bGO-qj-YfZ" id="qgV-bQ-BnY"/>
                         <outlet property="filterImageView" destination="2cD-qT-zeh" id="1di-1f-sSK"/>
+                        <outlet property="slider1" destination="7da-5N-CC4" id="sVJ-8c-meV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TzW-lt-iHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,6 +283,8 @@
     </scenes>
     <resources>
         <image name="camera44.png" width="32" height="32"/>
+        <image name="movie36.png" width="32" height="28"/>
         <image name="polaroid2.png" width="32" height="36"/>
+        <image name="stop46.png" width="32" height="32"/>
     </resources>
 </document>
