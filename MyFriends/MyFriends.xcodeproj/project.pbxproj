@@ -30,6 +30,12 @@
 		D8274D611A71A96F0019823C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8274D601A71A96F0019823C /* SystemConfiguration.framework */; };
 		D8274D631A71A9750019823C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8274D621A71A9750019823C /* libz.dylib */; };
 		D8274D651A71A97F0019823C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8274D641A71A97F0019823C /* libsqlite3.dylib */; };
+		D8274D681A71BB890019823C /* friendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8274D671A71BB890019823C /* friendsTVC.m */; };
+		D8274D6B1A71D36D0019823C /* CurrentFriendsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8274D6A1A71D36D0019823C /* CurrentFriendsTVC.m */; };
+		D8274D6E1A72B3420019823C /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D8274D6D1A72B3420019823C /* CustomButton.m */; };
+		D8274D741A72D4B50019823C /* TitleDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8274D731A72D4B50019823C /* TitleDrawingView.m */; };
+		D8274D761A72D87F0019823C /* add199.png in Resources */ = {isa = PBXBuildFile; fileRef = D8274D751A72D87F0019823C /* add199.png */; };
+		D8274D781A72D8860019823C /* group58.png in Resources */ = {isa = PBXBuildFile; fileRef = D8274D771A72D8860019823C /* group58.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,16 @@
 		D8274D601A71A96F0019823C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D8274D621A71A9750019823C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D8274D641A71A97F0019823C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D8274D661A71BB890019823C /* friendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendsTVC.h; sourceTree = "<group>"; };
+		D8274D671A71BB890019823C /* friendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = friendsTVC.m; sourceTree = "<group>"; };
+		D8274D691A71D36D0019823C /* CurrentFriendsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentFriendsTVC.h; sourceTree = "<group>"; };
+		D8274D6A1A71D36D0019823C /* CurrentFriendsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentFriendsTVC.m; sourceTree = "<group>"; };
+		D8274D6C1A72B3420019823C /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		D8274D6D1A72B3420019823C /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		D8274D721A72D4B50019823C /* TitleDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleDrawingView.h; sourceTree = "<group>"; };
+		D8274D731A72D4B50019823C /* TitleDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleDrawingView.m; sourceTree = "<group>"; };
+		D8274D751A72D87F0019823C /* add199.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add199.png; path = "../../../../Downloads/png-2/add199.png"; sourceTree = "<group>"; };
+		D8274D771A72D8860019823C /* group58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = group58.png; path = "../../../../Downloads/png-2/group58.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,13 +146,17 @@
 		D8274D1E1A71A88A0019823C /* MyFriends */ = {
 			isa = PBXGroup;
 			children = (
-				D8274D231A71A88A0019823C /* AppDelegate.h */,
-				D8274D241A71A88A0019823C /* AppDelegate.m */,
 				D8274D261A71A88A0019823C /* ViewController.h */,
 				D8274D271A71A88A0019823C /* ViewController.m */,
+				D8274D661A71BB890019823C /* friendsTVC.h */,
+				D8274D671A71BB890019823C /* friendsTVC.m */,
+				D8274D691A71D36D0019823C /* CurrentFriendsTVC.h */,
+				D8274D6A1A71D36D0019823C /* CurrentFriendsTVC.m */,
+				D8274D6C1A72B3420019823C /* CustomButton.h */,
+				D8274D6D1A72B3420019823C /* CustomButton.m */,
+				D8274D721A72D4B50019823C /* TitleDrawingView.h */,
+				D8274D731A72D4B50019823C /* TitleDrawingView.m */,
 				D8274D291A71A88A0019823C /* Main.storyboard */,
-				D8274D2C1A71A88A0019823C /* Images.xcassets */,
-				D8274D2E1A71A88A0019823C /* LaunchScreen.xib */,
 				D8274D1F1A71A88A0019823C /* Supporting Files */,
 			);
 			path = MyFriends;
@@ -145,6 +165,12 @@
 		D8274D1F1A71A88A0019823C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8274D751A72D87F0019823C /* add199.png */,
+				D8274D771A72D8860019823C /* group58.png */,
+				D8274D231A71A88A0019823C /* AppDelegate.h */,
+				D8274D241A71A88A0019823C /* AppDelegate.m */,
+				D8274D2C1A71A88A0019823C /* Images.xcassets */,
+				D8274D2E1A71A88A0019823C /* LaunchScreen.xib */,
 				D8274D201A71A88A0019823C /* Info.plist */,
 				D8274D211A71A88A0019823C /* main.m */,
 			);
@@ -272,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8274D2B1A71A88A0019823C /* Main.storyboard in Resources */,
+				D8274D781A72D8860019823C /* group58.png in Resources */,
+				D8274D761A72D87F0019823C /* add199.png in Resources */,
 				D8274D301A71A88A0019823C /* LaunchScreen.xib in Resources */,
 				D8274D2D1A71A88A0019823C /* Images.xcassets in Resources */,
 			);
@@ -291,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8274D6E1A72B3420019823C /* CustomButton.m in Sources */,
+				D8274D6B1A71D36D0019823C /* CurrentFriendsTVC.m in Sources */,
 				D8274D281A71A88A0019823C /* ViewController.m in Sources */,
 				D8274D251A71A88A0019823C /* AppDelegate.m in Sources */,
 				D8274D221A71A88A0019823C /* main.m in Sources */,
+				D8274D681A71BB890019823C /* friendsTVC.m in Sources */,
+				D8274D741A72D4B50019823C /* TitleDrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
