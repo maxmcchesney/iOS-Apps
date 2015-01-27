@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="87"/>
+            <point key="canvasLocation" x="214" y="87"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="x1x-qi-m2I">
@@ -194,14 +194,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43a-eN-EJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="103"/>
+            <point key="canvasLocation" x="729" y="103"/>
         </scene>
         <!--FriendsTVC-->
         <scene sceneID="OIV-dE-AKJ">
             <objects>
                 <tableViewController id="vNP-qW-kQ5" customClass="friendsTVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" id="bJ9-GH-G55">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="bJ9-GH-G55">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Z39-Cy-JnR">
@@ -263,7 +263,7 @@
                             </variation>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" textLabel="g3Z-2b-9eb" detailTextLabel="ssj-18-aua" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="X5R-J1-Jzm">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" textLabel="g3Z-2b-9eb" detailTextLabel="ssj-18-aua" rowHeight="90" style="IBUITableViewCellStyleValue1" id="X5R-J1-Jzm">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X5R-J1-Jzm" id="rVg-Sr-HhU">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -274,10 +274,9 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ssj-18-aua">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ssj-18-aua">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -289,6 +288,7 @@
                             <outlet property="delegate" destination="vNP-qW-kQ5" id="yde-WG-DLG"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="" image="add199.png" id="msC-lg-9qS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sL-fQ-E12" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -299,8 +299,8 @@
         <scene sceneID="QlS-CH-AXY">
             <objects>
                 <tableViewController id="tRi-UX-k1I" customClass="CurrentFriendsTVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hZ0-t7-nFT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" id="hZ0-t7-nFT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="52c-d5-SW2">
@@ -393,6 +393,7 @@
                             <outlet property="delegate" destination="tRi-UX-k1I" id="TJV-6O-MBb"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="" image="group58.png" id="7g4-Pc-Lyh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HF-jp-Ers" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -21,7 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updateFriendList) userInfo:nil repeats:YES];
+//    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(updateFriendList) userInfo:nil repeats:YES];
+    
+//    [self updateFriendList];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -29,6 +31,12 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [self updateFriendList];
+    
 }
 
 - (IBAction)logOut:(id)sender {
@@ -45,8 +53,7 @@
     
     [friendQuery whereKey:@"owner" equalTo:[PFUser currentUser].username];
     
-//    [friendQuery includeKey:@"owner"];   // DO I NEED THIS?
-    
+//    [friendQuery includeKey:@"createdAt"];   // DOESN'T WORK
     [friendQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         if (objects.count > 0) {
@@ -87,7 +94,7 @@
     
     if (currentFriends.count > 0) {
         cell.textLabel.text = currentFriends[indexPath.row][@"name"];
-        cell.detailTextLabel.text = currentFriends[indexPath.row][@"createdAt"];
+        cell.detailTextLabel.text = currentFriends[indexPath.row][@"age"];
     } else {
         cell.textLabel.text = @"No Friends...Yet!";
         cell.detailTextLabel.text = @"";

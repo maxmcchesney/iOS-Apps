@@ -37,7 +37,7 @@ IB_DESIGNABLE
 //    self.usernameTextField.attributedPlaceholder = @"Username";
 //    self.passwordTextField.attributedPlaceholder = @"Password";
     self.passwordTextField.delegate = self;
-    
+    self.usernameTextField.delegate = self;
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
