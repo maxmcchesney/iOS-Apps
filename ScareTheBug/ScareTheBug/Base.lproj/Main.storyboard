@@ -2,8 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,34 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meghanApp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LiV-Pz-X75">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="568"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="568" id="RsJ-pb-EVg"/>
-                                    <constraint firstAttribute="width" secondItem="LiV-Pz-X75" secondAttribute="height" multiplier="1:1" id="nyF-Bg-cxx"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Log Cabin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3g0-qD-9hA">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7Q-hQ-cjI">
+                                <rect key="frame" x="224" y="135" width="120" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="O3V-Ik-x6T"/>
+                                    <constraint firstAttribute="width" constant="120" id="O5v-Xy-5yR"/>
+                                </constraints>
+                                <state key="normal" title="Play Again!">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q4d-8L-CLC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LiV-Pz-X75" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-108" id="2N8-S1-p2K"/>
-                            <constraint firstAttribute="centerY" secondItem="LiV-Pz-X75" secondAttribute="centerY" id="4a3-Ob-yZG"/>
-                            <constraint firstAttribute="centerX" secondItem="LiV-Pz-X75" secondAttribute="centerX" id="QFO-Q5-iga"/>
-                            <constraint firstItem="LiV-Pz-X75" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="aEr-rj-J1z"/>
-                            <constraint firstItem="LiV-Pz-X75" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="vEl-W6-jUt"/>
-                            <constraint firstItem="LiV-Pz-X75" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="viN-ez-5vh"/>
+                            <constraint firstAttribute="centerY" secondItem="z7Q-hQ-cjI" secondAttribute="centerY" id="A52-c1-3R1"/>
+                            <constraint firstAttribute="centerX" secondItem="z7Q-hQ-cjI" secondAttribute="centerX" id="yxJ-Xe-ojv"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2N8-S1-p2K"/>
-                                <exclude reference="4a3-Ob-yZG"/>
-                                <exclude reference="QFO-Q5-iga"/>
-                                <exclude reference="viN-ez-5vh"/>
-                            </mask>
-                        </variation>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="568" height="320"/>
+                    <connections>
+                        <outlet property="playAgainButton" destination="z7Q-hQ-cjI" id="YBz-NF-d16"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="meghanApp.jpg" width="339" height="568"/>
+        <image name="Log Cabin.jpg" width="2069" height="1286"/>
     </resources>
 </document>

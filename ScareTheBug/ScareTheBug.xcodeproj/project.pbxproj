@@ -15,6 +15,8 @@
 		D8274E511A7829C70019823C /* ScareTheBugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8274E501A7829C70019823C /* ScareTheBugTests.swift */; };
 		D8274E5B1A782DD60019823C /* bug.png in Resources */ = {isa = PBXBuildFile; fileRef = D8274E5A1A782DD60019823C /* bug.png */; };
 		D8274E611A78586F0019823C /* meghanApp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8274E601A78586F0019823C /* meghanApp.jpg */; };
+		D8274E671A78A29D0019823C /* squish.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8274E661A78A29D0019823C /* squish.caf */; };
+		D8274E971A7926710019823C /* Log Cabin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8274E961A7926710019823C /* Log Cabin.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,9 @@
 		D8274E4F1A7829C70019823C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8274E501A7829C70019823C /* ScareTheBugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScareTheBugTests.swift; sourceTree = "<group>"; };
 		D8274E5A1A782DD60019823C /* bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bug.png; path = ../bug.png; sourceTree = "<group>"; };
-		D8274E601A78586F0019823C /* meghanApp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meghanApp.jpg; sourceTree = "<group>"; };
+		D8274E601A78586F0019823C /* meghanApp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = meghanApp.jpg; path = ../meghanApp.jpg; sourceTree = "<group>"; };
+		D8274E661A78A29D0019823C /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
+		D8274E961A7926710019823C /* Log Cabin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Log Cabin.jpg"; path = "../Log Cabin.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,7 @@
 		D8274E2C1A7829C70019823C = {
 			isa = PBXGroup;
 			children = (
-				D8274E601A78586F0019823C /* meghanApp.jpg */,
+				D8274E651A78A29D0019823C /* Sounds */,
 				D8274E371A7829C70019823C /* ScareTheBug */,
 				D8274E4D1A7829C70019823C /* ScareTheBugTests */,
 				D8274E361A7829C70019823C /* Products */,
@@ -92,9 +96,11 @@
 		D8274E381A7829C70019823C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8274E5A1A782DD60019823C /* bug.png */,
+				D8274E961A7926710019823C /* Log Cabin.jpg */,
+				D8274E601A78586F0019823C /* meghanApp.jpg */,
 				D8274E3A1A7829C70019823C /* AppDelegate.swift */,
 				D8274E411A7829C70019823C /* Images.xcassets */,
+				D8274E5A1A782DD60019823C /* bug.png */,
 				D8274E431A7829C70019823C /* LaunchScreen.xib */,
 				D8274E391A7829C70019823C /* Info.plist */,
 			);
@@ -116,6 +122,14 @@
 				D8274E4F1A7829C70019823C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8274E651A78A29D0019823C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D8274E661A78A29D0019823C /* squish.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +215,8 @@
 				D8274E611A78586F0019823C /* meghanApp.jpg in Resources */,
 				D8274E5B1A782DD60019823C /* bug.png in Resources */,
 				D8274E401A7829C70019823C /* Main.storyboard in Resources */,
+				D8274E671A78A29D0019823C /* squish.caf in Resources */,
+				D8274E971A7926710019823C /* Log Cabin.jpg in Resources */,
 				D8274E451A7829C70019823C /* LaunchScreen.xib in Resources */,
 				D8274E421A7829C70019823C /* Images.xcassets in Resources */,
 			);
@@ -413,6 +429,7 @@
 				D8274E561A7829C70019823C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8274E571A7829C70019823C /* Build configuration list for PBXNativeTarget "ScareTheBugTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +438,7 @@
 				D8274E591A7829C70019823C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
