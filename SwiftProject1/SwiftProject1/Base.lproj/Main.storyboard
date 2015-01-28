@@ -73,7 +73,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="logIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QKW-g3-FyE"/>
+                                    <action selector="logIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QTa-tK-zPE"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j0n-x2-zbE">
@@ -97,6 +97,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jvn-9C-fJc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvX-Sz-D9s">
                                 <rect key="frame" x="183" y="539" width="183.5" height="20.5"/>
@@ -171,9 +174,11 @@
                     </view>
                     <connections>
                         <outlet property="confirmPasswordField" destination="j0n-x2-zbE" id="J4Y-Fm-1bN"/>
+                        <outlet property="createAccountLabel" destination="jAx-qI-aP2" id="UNN-eO-Ph5"/>
                         <outlet property="emailField" destination="6jF-32-o0e" id="yNK-g6-NTs"/>
                         <outlet property="messageLabel" destination="dLE-Ca-ZBy" id="1gT-sb-k4R"/>
                         <outlet property="passwordField" destination="M9R-97-vcU" id="QIe-Kv-CXx"/>
+                        <outlet property="signUpLogInButton" destination="uJY-So-2SU" id="uak-aF-IcH"/>
                         <outlet property="usernameField" destination="D6F-Zm-QEe" id="mPv-M2-SIU"/>
                     </connections>
                 </viewController>

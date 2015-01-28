@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftAppT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x3n-oV-3pu">
+                                <rect key="frame" x="200" y="70" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Yh-2W-nCt"/>
+                                    <constraint firstAttribute="width" constant="200" id="9MD-C8-AW0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QU8-VK-172">
+                                <rect key="frame" x="200" y="130" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="qaM-AE-IOE"/>
+                                    <constraint firstAttribute="height" constant="30" id="zRZ-S4-U1Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RoM-dc-cdf">
+                                <rect key="frame" x="200" y="191" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="uiw-kE-z06"/>
+                                    <constraint firstAttribute="height" constant="30" id="utk-6X-f0N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22j-DR-v8C">
+                                <rect key="frame" x="244" y="263" width="112" height="30"/>
+                                <state key="normal" title="Log In / Sign Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i0C-v3-iOy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="22j-DR-v8C" firstAttribute="top" secondItem="RoM-dc-cdf" secondAttribute="bottom" constant="42" id="0gU-TH-cfs"/>
+                            <constraint firstItem="x3n-oV-3pu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="Bgu-RY-8xb"/>
+                            <constraint firstAttribute="centerX" secondItem="x3n-oV-3pu" secondAttribute="centerX" id="LTa-uE-dEw"/>
+                            <constraint firstItem="QU8-VK-172" firstAttribute="top" secondItem="x3n-oV-3pu" secondAttribute="bottom" constant="30" id="MW4-uP-WBN"/>
+                            <constraint firstAttribute="centerX" secondItem="RoM-dc-cdf" secondAttribute="centerX" id="XEJ-ar-5Mv"/>
+                            <constraint firstItem="RoM-dc-cdf" firstAttribute="top" secondItem="QU8-VK-172" secondAttribute="bottom" constant="31" id="ZBj-7P-TdT"/>
+                            <constraint firstAttribute="centerX" secondItem="QU8-VK-172" secondAttribute="centerX" id="kGf-OB-fk9"/>
+                            <constraint firstAttribute="centerX" secondItem="22j-DR-v8C" secondAttribute="centerX" id="v1x-N6-a3C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="RoM-dc-cdf" id="4W8-jk-tfg"/>
+                        <outlet property="passwordField" destination="QU8-VK-172" id="Njs-2E-JUv"/>
+                        <outlet property="usernameField" destination="x3n-oV-3pu" id="pdI-fn-Myr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
