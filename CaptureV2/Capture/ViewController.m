@@ -47,7 +47,7 @@
     self.cameraPickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
     self.cameraPickerController.cameraDevice = UIImagePickerControllerCameraDeviceFront;
     self.cameraPickerController.showsCameraControls = NO;
-    self.cameraPickerController.delegate = self;
+    self.cameraPickerController.delegate = self;
     self.cameraPickerController.mediaTypes = @[(NSString *)kUTTypeImage,(NSString *)kUTTypeMovie];
     
     self.cameraPickerController.view.frame = self.cameraView.bounds;
