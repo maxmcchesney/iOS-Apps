@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FFAController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-img5-filtered" translatesAutoresizingMaskIntoConstraints="NO" id="Wg4-Oa-vOX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JJH-vr-N7e">
+                                <rect key="frame" x="114" y="50" width="372" height="125"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="372" id="41h-Wa-jZc"/>
+                                    <constraint firstAttribute="height" constant="50" id="eAf-F0-XPy"/>
+                                    <constraint firstAttribute="width" constant="50" id="ihL-Wc-4ay"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="125" id="vkf-jd-Vzp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eAf-F0-XPy"/>
+                                        <exclude reference="ihL-Wc-4ay"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8G-9O-hIj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rfO-8U-gI9">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhw-m0-9b4">
+                                            <rect key="frame" x="66" y="480" width="50" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="N02-1d-rLn"/>
+                                                <constraint firstAttribute="height" constant="50" id="zNP-Kr-uwf"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CONTROLLER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vv-AB-Qdp">
+                                            <rect key="frame" x="150" y="90" width="300" height="57.5"/>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="40"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="7Vv-AB-Qdp" secondAttribute="centerX" id="046-E3-KBv"/>
+                                        <constraint firstAttribute="bottom" secondItem="bhw-m0-9b4" secondAttribute="bottom" constant="70" id="CRP-dh-9D8"/>
+                                        <constraint firstItem="7Vv-AB-Qdp" firstAttribute="top" secondItem="rfO-8U-gI9" secondAttribute="top" constant="90" id="guI-S6-EdN"/>
+                                        <constraint firstItem="bhw-m0-9b4" firstAttribute="leading" secondItem="rfO-8U-gI9" secondAttribute="leading" constant="66" id="hhU-ga-1oQ"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTb-q5-VZe" customClass="ArrowButton" customModule="FFAController" customModuleProvider="target">
+                                <rect key="frame" x="66" y="430" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="C9Q-0A-42D"/>
+                                    <constraint firstAttribute="height" constant="50" id="Roz-bs-HSu"/>
+                                    <constraint firstAttribute="width" constant="50" id="hMh-g9-BuB"/>
+                                    <constraint firstAttribute="width" constant="75" id="yI6-li-G4P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="direction" value="Up"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.12549020350000001" green="0.57647061349999995" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeSize">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C9Q-0A-42D"/>
+                                        <exclude reference="yI6-li-G4P"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="upArrow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="674-nY-eOA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRt-Wf-ZIM" customClass="ArrowButton" customModule="FFAController" customModuleProvider="target">
+                                <rect key="frame" x="66" y="530" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Eve-fS-rpF"/>
+                                    <constraint firstAttribute="width" constant="75" id="aJT-ly-odg"/>
+                                    <constraint firstAttribute="width" constant="50" id="iYd-gk-azE"/>
+                                    <constraint firstAttribute="height" constant="50" id="xeZ-ZF-ZCU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="direction" value="Down"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.12549020350000001" green="0.57647061349999995" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Eve-fS-rpF"/>
+                                        <exclude reference="aJT-ly-odg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="downArrow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z8S-a6-GyV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD4-Ve-MNF" customClass="ArrowButton" customModule="FFAController" customModuleProvider="target">
+                                <rect key="frame" x="16" y="480" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="584-0D-4oe"/>
+                                    <constraint firstAttribute="width" constant="50" id="D2F-MB-q1n"/>
+                                    <constraint firstAttribute="width" constant="75" id="uGa-Eo-OFj"/>
+                                    <constraint firstAttribute="height" constant="75" id="uN5-ql-NFA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="direction" value="Left"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.12549020350000001" green="0.57647061349999995" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="uGa-Eo-OFj"/>
+                                        <exclude reference="uN5-ql-NFA"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leftArrow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GrM-1x-r36"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec8-n0-50W" customClass="ArrowButton" customModule="FFAController" customModuleProvider="target">
+                                <rect key="frame" x="116" y="480" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Xgu-aL-EKb"/>
+                                    <constraint firstAttribute="width" constant="50" id="Xj4-hP-HUt"/>
+                                    <constraint firstAttribute="width" constant="75" id="ggz-G3-GIW"/>
+                                    <constraint firstAttribute="height" constant="50" id="uHq-Wy-x12"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.12549020350000001" green="0.57647061349999995" blue="0.8078432083" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="direction" value="Right"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xgu-aL-EKb"/>
+                                        <exclude reference="ggz-G3-GIW"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="rightArrow:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B2z-Bh-Duo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD2-Yd-xzx" customClass="ArrowButton" customModule="FFAController" customModuleProvider="target">
+                                <rect key="frame" x="534" y="480" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.91764712329999998" green="0.078431375319999996" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CXr-G4-DT4"/>
+                                    <constraint firstAttribute="width" constant="75" id="Pds-Sn-Mj2"/>
+                                    <constraint firstAttribute="height" constant="75" id="RkD-a1-vfD"/>
+                                    <constraint firstAttribute="width" constant="50" id="ZXO-30-v9Y"/>
+                                    <constraint firstAttribute="width" constant="75" id="jQU-fI-Vk6"/>
+                                    <constraint firstAttribute="height" constant="50" id="knG-yF-VjB"/>
+                                    <constraint firstAttribute="height" constant="75" id="smk-II-pKf"/>
+                                    <constraint firstAttribute="height" constant="50" id="we1-55-bP2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeSize">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.91764712329999998" green="0.078431375319999996" blue="0.23529413339999999" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CXr-G4-DT4"/>
+                                        <exclude reference="Pds-Sn-Mj2"/>
+                                        <exclude reference="RkD-a1-vfD"/>
+                                        <exclude reference="jQU-fI-Vk6"/>
+                                        <exclude reference="knG-yF-VjB"/>
+                                        <exclude reference="smk-II-pKf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="fireButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S5y-xt-agy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxy-8l-iTJ" customClass="ArrowButton" customModule="FFAController" customModuleProvider="target">
+                                <rect key="frame" x="476" y="480" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.17254902422428131" green="0.54901963472366333" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="49a-TX-3Gs"/>
+                                    <constraint firstAttribute="height" constant="75" id="PXf-6V-qb6"/>
+                                    <constraint firstAttribute="width" constant="75" id="StF-TD-M5i"/>
+                                    <constraint firstAttribute="width" constant="75" id="Vg2-FS-Kex"/>
+                                    <constraint firstAttribute="width" constant="50" id="ZAx-yp-xlW"/>
+                                    <constraint firstAttribute="height" constant="75" id="h1y-TV-AV9"/>
+                                    <constraint firstAttribute="width" constant="50" id="kqZ-Ns-Qc5"/>
+                                    <constraint firstAttribute="height" constant="50" id="snH-wX-dFn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Y">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.17254902420000001" green="0.54901963470000004" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeSize">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="49a-TX-3Gs"/>
+                                        <exclude reference="PXf-6V-qb6"/>
+                                        <exclude reference="StF-TD-M5i"/>
+                                        <exclude reference="Vg2-FS-Kex"/>
+                                        <exclude reference="h1y-TV-AV9"/>
+                                        <exclude reference="kqZ-Ns-Qc5"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="specialButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZQ2-kR-i8D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KD2-Yd-xzx" secondAttribute="bottom" constant="109" id="0WZ-cl-e30"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QTb-q5-VZe" secondAttribute="bottom" constant="120" id="5Lv-xc-jCO"/>
+                            <constraint firstItem="KD2-Yd-xzx" firstAttribute="leading" secondItem="cxy-8l-iTJ" secondAttribute="trailing" constant="8" id="6J8-mV-IRJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KD2-Yd-xzx" secondAttribute="bottom" constant="70" id="6oX-19-d5t"/>
+                            <constraint firstItem="KD2-Yd-xzx" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="A36-9v-eOK"/>
+                            <constraint firstAttribute="trailing" secondItem="Wg4-Oa-vOX" secondAttribute="trailing" id="DF5-Yy-bGQ"/>
+                            <constraint firstItem="Wg4-Oa-vOX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ELU-RE-3bh"/>
+                            <constraint firstItem="ec8-n0-50W" firstAttribute="leading" secondItem="oRt-Wf-ZIM" secondAttribute="trailing" constant="8" id="EcS-gN-cjf"/>
+                            <constraint firstItem="WD4-Ve-MNF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="JDk-hi-MQT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cxy-8l-iTJ" secondAttribute="bottom" constant="58" id="OyW-ue-2c4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KD2-Yd-xzx" secondAttribute="bottom" constant="58" id="OzB-sM-HLT"/>
+                            <constraint firstItem="QTb-q5-VZe" firstAttribute="leading" secondItem="WD4-Ve-MNF" secondAttribute="trailing" constant="8" id="P7M-Ai-Df7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wg4-Oa-vOX" secondAttribute="bottom" id="PP1-l8-7hW"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oRt-Wf-ZIM" secondAttribute="bottom" constant="20" id="QMr-62-XaI"/>
+                            <constraint firstItem="cxy-8l-iTJ" firstAttribute="leading" secondItem="KD2-Yd-xzx" secondAttribute="trailing" constant="34" id="Rr5-cr-ovR"/>
+                            <constraint firstItem="oRt-Wf-ZIM" firstAttribute="top" secondItem="QTb-q5-VZe" secondAttribute="bottom" constant="15" id="SxM-qR-Daz"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WD4-Ve-MNF" secondAttribute="bottom" constant="109" id="TRo-GY-s59"/>
+                            <constraint firstItem="WD4-Ve-MNF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="VIQ-7s-obx"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cxy-8l-iTJ" secondAttribute="bottom" constant="109" id="XGv-tY-n0G"/>
+                            <constraint firstItem="u8G-9O-hIj" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="ZMM-TN-DsL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WD4-Ve-MNF" secondAttribute="bottom" constant="70" id="aGG-hf-pEJ"/>
+                            <constraint firstAttribute="centerX" secondItem="JJH-vr-N7e" secondAttribute="centerX" id="aP4-g4-8FE"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ec8-n0-50W" secondAttribute="bottom" constant="109" id="ayS-BJ-qfw"/>
+                            <constraint firstItem="KD2-Yd-xzx" firstAttribute="leading" secondItem="cxy-8l-iTJ" secondAttribute="trailing" constant="8" id="b39-NI-Jvg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ec8-n0-50W" secondAttribute="bottom" constant="70" id="chj-yq-nNE"/>
+                            <constraint firstItem="Wg4-Oa-vOX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="dN9-HN-USQ"/>
+                            <constraint firstAttribute="trailing" secondItem="u8G-9O-hIj" secondAttribute="trailing" id="dTO-UL-WkT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cxy-8l-iTJ" secondAttribute="trailing" constant="25" id="dwa-b8-47D"/>
+                            <constraint firstItem="oRt-Wf-ZIM" firstAttribute="bottomMargin" secondItem="QTb-q5-VZe" secondAttribute="bottom" constant="120" id="fJX-64-oEa"/>
+                            <constraint firstItem="KD2-Yd-xzx" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="gh2-pb-WTD"/>
+                            <constraint firstAttribute="bottom" secondItem="Wg4-Oa-vOX" secondAttribute="bottom" id="hro-1J-00E"/>
+                            <constraint firstItem="ec8-n0-50W" firstAttribute="leading" secondItem="WD4-Ve-MNF" secondAttribute="trailing" constant="50" id="jlI-0T-q9Y"/>
+                            <constraint firstItem="oRt-Wf-ZIM" firstAttribute="leading" secondItem="WD4-Ve-MNF" secondAttribute="trailing" id="kML-Eg-Joj"/>
+                            <constraint firstItem="oRt-Wf-ZIM" firstAttribute="leading" secondItem="WD4-Ve-MNF" secondAttribute="trailing" constant="8" id="mgs-z4-pOh"/>
+                            <constraint firstItem="Wg4-Oa-vOX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="noC-x5-czO"/>
+                            <constraint firstItem="QTb-q5-VZe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="oFc-fp-Tmy"/>
+                            <constraint firstItem="Wg4-Oa-vOX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="oG5-yI-vsA"/>
+                            <constraint firstItem="u8G-9O-hIj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="oOv-18-Een"/>
+                            <constraint firstItem="JJH-vr-N7e" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="p6Y-KD-zXF"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="u8G-9O-hIj" secondAttribute="bottom" id="pAy-Vn-gTH"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cxy-8l-iTJ" secondAttribute="bottom" constant="70" id="rUo-XG-1Cd"/>
+                            <constraint firstAttribute="trailing" secondItem="Wg4-Oa-vOX" secondAttribute="trailing" id="tXp-QX-WDl"/>
+                            <constraint firstItem="u8G-9O-hIj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="top" id="ukD-1z-cFD"/>
+                            <constraint firstItem="KD2-Yd-xzx" firstAttribute="leading" secondItem="cxy-8l-iTJ" secondAttribute="trailing" constant="8" id="v7a-lS-oyK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KD2-Yd-xzx" secondAttribute="bottom" constant="70" id="wMU-NH-lHX"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oRt-Wf-ZIM" secondAttribute="bottom" constant="62" id="wNO-WW-f69"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cxy-8l-iTJ" secondAttribute="bottom" constant="70" id="xGY-RJ-ley"/>
+                            <constraint firstItem="KD2-Yd-xzx" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="xqM-yJ-OHs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hro-1J-00E"/>
+                                <exclude reference="noC-x5-czO"/>
+                                <exclude reference="oG5-yI-vsA"/>
+                                <exclude reference="tXp-QX-WDl"/>
+                                <exclude reference="ukD-1z-cFD"/>
+                                <exclude reference="P7M-Ai-Df7"/>
+                                <exclude reference="JDk-hi-MQT"/>
+                                <exclude reference="EcS-gN-cjf"/>
+                                <exclude reference="SxM-qR-Daz"/>
+                                <exclude reference="fJX-64-oEa"/>
+                                <exclude reference="mgs-z4-pOh"/>
+                                <exclude reference="0WZ-cl-e30"/>
+                                <exclude reference="OyW-ue-2c4"/>
+                                <exclude reference="OzB-sM-HLT"/>
+                                <exclude reference="TRo-GY-s59"/>
+                                <exclude reference="XGv-tY-n0G"/>
+                                <exclude reference="ayS-BJ-qfw"/>
+                                <exclude reference="wMU-NH-lHX"/>
+                                <exclude reference="wNO-WW-f69"/>
+                                <exclude reference="xGY-RJ-ley"/>
+                                <exclude reference="Rr5-cr-ovR"/>
+                                <exclude reference="dwa-b8-47D"/>
+                                <exclude reference="A36-9v-eOK"/>
+                                <exclude reference="b39-NI-Jvg"/>
+                                <exclude reference="gh2-pb-WTD"/>
+                                <exclude reference="v7a-lS-oyK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="315"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-img5-filtered" width="1620" height="1080"/>
+    </resources>
+</document>
